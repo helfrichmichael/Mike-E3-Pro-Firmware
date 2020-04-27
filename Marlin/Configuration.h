@@ -71,7 +71,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Mike H, Ender-3)" // Who made the changes. //Customized DBP
+#define STRING_CONFIG_H_AUTHOR "(Mike H, Ender-3 Pro)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -86,14 +86,13 @@
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-#define SHOW_BOOTSCREEN //Customized DBP
+#define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
-//#define SHOW_CUSTOM_BOOTSCREEN //Customized DBP
+// #define SHOW_CUSTOM_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
-
-#define CUSTOM_STATUS_SCREEN_IMAGE //Customized DBP
+#define CUSTOM_STATUS_SCREEN_IMAGE
 
 // @section machine
 
@@ -135,7 +134,7 @@
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Marlin 2.0.1" //Customized DBP
+#define CUSTOM_MACHINE_NAME "Ender-3 Pro"
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like http://www.uuidgenerator.net/version4
@@ -475,10 +474,15 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Creality Ender-3
-  #define DEFAULT_Kp 19.35 //Customized DBP
-  #define DEFAULT_Ki 1.34 //Customized DBP
-  #define DEFAULT_Kd 69.75 //Customized DBP
+  // Creality Ender-3 (Customized by DBP)
+  #define DEFAULT_Kp 19.35
+  #define DEFAULT_Ki 1.34
+  #define DEFAULT_Kd 69.75
+  
+  // Creality Ender-3 Original Values
+  // #define DEFAULT_Kp 21.73
+  // #define DEFAULT_Ki 1.54
+  // #define DEFAULT_Kd 76.55
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
